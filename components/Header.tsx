@@ -14,8 +14,8 @@ export default function Header() {
             alt='Linkdin'
             className='rounded-lg'
         />
-        <div className='hidden md:flex'>
-          <form className='flex items-center space-x-1 bg-gray-100 p-2'>
+        <div className='flex-1'>
+          <form className='flex items-center space-x-1 bg-gray-100 p-2  mx-2'>
             <SearchIcon className='h-4 text-gray-600'/>
             <input 
               type='text'
@@ -42,7 +42,7 @@ export default function Header() {
                   <p>Message</p>
             </Link>
                 <SignedOut>
-                  <Button asChild>
+                  <Button asChild variant={'default'}>
                       <SignInButton />
                   </Button>
                 </SignedOut>
